@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="download.jpg" alt="SIMATS">
+    <h1>SAVEETHA ADMISSION FORM</h1>
+    <h1>ENGINEERING</h1>
+    <form id="admission-form">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" required>
+
+        <label for="Mobile">Phone no:</label>
+        <input type="text" id="Mobile" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="Mark">12th Mark:</label>
+        <input type="text" id="Mark" required>
+        
+        <label for="course">Select Course:</label>
+        <select id="course">
+            <option value="ENGINEERING">EEE</option>
+            <option value="ENGINEERING">IT</option>
+            <option value="ENGINEERING">AIDS</option>
+            <option value="ENGINEERING">ECE</option>
+            <option value="ENGINEERING">MECHANICAL</option>
+            <option value="ENGINEERING">CIVIL</option>
+            <option value="ENGINEERING">CSE</option>
+        </select>
+        
+        <button type="button" onclick="submitApplication()">Apply</button>
+    </form>
+    
+    <h2>Successfully Rigistered</h2>
+    <ul id="applications-list"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
